@@ -7,4 +7,5 @@ url = 'https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-195
 html = requests.get(url)
 info = bs(html.text, 'lxml')
 dchar = info.find('div', class_='sc-jTUlZf cXGqQC')
-print(dchar)
+
+print(dir(bs))
